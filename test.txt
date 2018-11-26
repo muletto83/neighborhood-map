@@ -1,1 +1,2 @@
 Testing GitHub-Atom again
+Testing 2 way communcation again

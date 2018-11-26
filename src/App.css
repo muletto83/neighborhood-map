@@ -4,7 +4,13 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 5vmin;
+
+  position: absolute;
+      top: 1%;  /* position the top  edge of the element at the middle of the parent */
+      left: 50%; /* position the left edge of the element at the middle of the parent */
+
+
 }
 
 .App-header {
@@ -29,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Full screen map */
+#map {
+  height: 100vh;
+}
+/*Makes the sample page fill the window.
+* https://developers.google.com/maps/documentation/javascript/tutorial */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
