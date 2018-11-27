@@ -3,6 +3,7 @@ Testing 2 way communcation again
 
 creating a json for my city on http://myjson.com/svl16
 pretty version
+list of my favourite restaurants
 [
     {
         "id":1,
