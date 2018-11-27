@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { load_google_maps } from "./Avail";
+import { load_google_maps, loadRestaurants } from "./Avail";
 import MapComp from "./components/MapComp";
 
 class App extends Component {
@@ -9,14 +9,15 @@ class App extends Component {
   *  If we need to load data from a remote endpoint,
   *  this is a good place to instantiate the network request. */
   componentDidMount() {
-    let googleMapPromise = load_google_maps();
+    let gMapPromise = load_google_maps();
+    let restaurantsPromise = loadRestaurants();
 
-    Promise.all([googleMapPromise]).then(values => {
+    Promise.all([gMapPromise, restaurantsPromise]).then(values => {
       //Checking the the value content to evaluate our next move
       console.log(values);
       let google = values[0];
       this.map = new google.maps.Map(document.getElementById("map"), {
-				// Center map on DFW Metroplex
+				// Coordinate of Woodstock GA
 				center: {
 					lat: 34.101318,
 					lng: -84.519379

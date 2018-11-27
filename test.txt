@@ -1,2 +1,60 @@
 Testing GitHub-Atom again
 Testing 2 way communcation again
+
+creating a json for my city on http://myjson.com/svl16
+pretty version
+[
+    {
+        "id":1,
+        "position":{"lat":34.086948,"lng":-84.472761},
+        "name":"Garlik Grill",
+        "address":"12910 GA-92 suite 105, Woodstock, GA 30188",
+        "website":"https://garlikgrill.com/"
+    },
+    {
+        "id":2,
+        "position":{"lat":34.099039,"lng":-84.519657},
+        "name":"Century House Tavern",
+        "address":"125 E Main St, Woodstock, GA 30188",
+        "website":"https://www.centuryhousetavern.com/"
+    },
+    {
+        "id":3,
+        "position":
+        {"lat":34.106671,"lng":-84.542954},
+        "name":"Tuscany Italian Restaurant",
+        "address":"250 Cinema View, Woodstock, GA 30189",
+        "website":"http://mytuscanyrestaurant.com/"
+    },
+    {
+        "id":4,
+        "position":{"lat":34.086735,"lng":-84.520683},
+        "name":"Gondolier Italian Restaurant and Pizza",
+        "address":"10029 Highway 92 #112, Woodstock, GA 30188",
+        "website":"http://www.gondolierwoodstock.com/"
+    },
+    {
+        "id":5,
+        "position":{"lat":34.120194,"lng":-84.526693},
+        "name":"Taqueria Tsunami",
+        "address":"915 Ridgewalk Pkwy, Woodstock, GA 30188",
+        "website":"http://taqueriatsunami.com/"
+    },
+    {
+        "id":6,
+        "position":{"lat":34.102326,"lng":-84.51943},
+        "name":"Ipp's Pastaria & Bar",
+        "address":"8496 Main St, Woodstock, GA 30188",
+        "website":"http://www.ippspastaria.com/"
+    },
+    {
+        "id":7,
+        "position":{"lat":34.130518,"lng":-84.498978},
+        "name":"Taste Of Italy",
+        "address":"Ste D4, 6234 Old Hwy 5, Woodstock, GA 30188",
+        "website":"https://www.tasteofitalypizza.us/"
+    }
+]
+
+extended version
+[{"id":1,"position":{"lat":34.086948,"lng":-84.472761},"name":"Garlik Grill","address":"12910 GA-92 suite 105, Woodstock, GA 30188","website":"https://garlikgrill.com/"},{"id":2,"position":{"lat":34.099039,"lng":-84.519657},"name":"Century House Tavern","address":"125 E Main St, Woodstock, GA 30188","website":"https://www.centuryhousetavern.com/"},{"id":3,"position":{"lat":34.106671,"lng":-84.542954},"name":"Tuscany Italian Restaurant","address":"250 Cinema View, Woodstock, GA 30189","website":"http://mytuscanyrestaurant.com/"},{"id":4,"position":{"lat":34.086735,"lng":-84.520683},"name":"Gondolier Italian Restaurant and Pizza","address":"10029 Highway 92 #112, Woodstock, GA 30188","website":"http://www.gondolierwoodstock.com/"},{"id":5,"position":{"lat":34.120194,"lng":-84.526693},"name":"Taqueria Tsunami","address":"915 Ridgewalk Pkwy, Woodstock, GA 30188","website":"http://taqueriatsunami.com/"},{"id":6,"position":{"lat":34.102326,"lng":-84.51943},"name":"Ipp's Pastaria & Bar","address":"8496 Main St, Woodstock, GA 30188","website":"http://www.ippspastaria.com/"},{"id":7,"position":{"lat":34.130518,"lng":-84.498978},"name":"Taste Of Italy","address":"Ste D4, 6234 Old Hwy 5, Woodstock, GA 30188","website":"https://www.tasteofitalypizza.us/"}]

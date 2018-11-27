@@ -19,3 +19,10 @@ export function load_google_maps() {
 		document.body.appendChild(script);
 	});
 }
+
+// Function that load restaurants from Homemade API
+export function loadRestaurants() {
+	return fetch("https://api.myjson.com/bins/svl16")
+		.then(response => response.json())
+		.catch(error => alert("The API is not working... Sorry for the trouble."));
+}
