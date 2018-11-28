@@ -2,11 +2,13 @@ import React, { Component } from "react";
 
 export default class MapComp extends Component {
   render() {
-		return (
-			<main>
-        {/*https://stackoverflow.com/questions/50503677/proper-use-of-aria-role-for-google-maps*/}
-				<div id="map" role="application" aria-label="Map Application" />
-			</main>
-		);
-	}
+    return (
+      <div
+        id="map"
+        role="application"
+        aria-label="Map Application"
+        style={{ float: "right", width: "70vw", height: 'calc(100vh - 70px)' }}
+      />
+    );
+  }
 }
