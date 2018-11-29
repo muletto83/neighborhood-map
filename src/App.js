@@ -110,6 +110,32 @@ class App extends Component {
       </div>`);
   };
 
+  updateQuery = (query) => {
+    console.log(query)
+    console.log(this.state.restaurants)
+    let matchedRestaurants = []
+    if (!query) {
+      this.setState({
+        filteredRestaurants: this.state.restaurants
+      })
+    }
+    this.state.restaurants.forEach(restaurant => {
+      if (restaurant.restaurant.name.toLowerCase().includes(query.toLowerCase())) {
+        matchedRestaurants.push(restaurant)
+      }
+    });
+    this.state.markers.forEach(marker => {
+      marker.setVisible(false);
+      matchedRestaurants.forEach(restaurant => {
+        if (marker.title === restaurant.restaurant.name) {
+          marker.setVisible(true);
+        }
+      });
+    });
+    this.setState({
+      filteredRestaurants: matchedRestaurants
+    });
+  };
   handleClick = restaurant => {
     const { markers, map, infoWindow } = this.state;
     markers.map(marker => {
@@ -127,7 +153,10 @@ class App extends Component {
       <div className="App" style={{ width: "100vw", height: "100vh" }}>
         <Header />
         <Sidebar
-          filteredRestaurants={this.state.filteredRestaurants}
+          {...this.state}
+          restaurants={this.state.restaurants}
+          filtered={this.state.filteredRestaurants}
+          filteredRestaurants={this.updateQuery}
           handleClick={this.handleClick}
         />
         <MapComp />
