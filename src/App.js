@@ -44,6 +44,7 @@ class App extends Component {
       /* For each restaurant we will have a marker on the map
        ** The animation is a DROP from the sky :)
        ** https://developers.google.com/maps/documentation/javascript/markers */
+      if (!restaurants) return;
       restaurants.forEach(restaurant => {
         let marker = new google.maps.Marker({
           id: restaurant.id,
@@ -112,7 +113,10 @@ class App extends Component {
 
   filterRestaurants = query => {
     let matchedRestaurants = [];
-    if (query === "") {
+    let infoWindow = this.state.infoWindow;
+    if (query !== "") {
+      infoWindow.close();
+    } else if (query === "") {
       this.setState({
         filteredRestaurants: this.state.restaurants
       });

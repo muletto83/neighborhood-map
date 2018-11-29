@@ -3,14 +3,18 @@
 *::after {
   box-sizing: border-box;
 }
+
+/*Improved focus*/
 *:focus {
   outline: red solid 3px;
 }
+
+
+/*Rotating REACT Logo */
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 10vmin;
   padding-top: 10px;
-
 }
 @keyframes App-logo-spin {
   from {
@@ -20,10 +24,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*Header with Flexbox*/
 .the-header {
   display:flex;
   justify-content: center;
-
   background-color: #ff844f;
   height: 70px;
 }
@@ -31,11 +37,14 @@
 h1 {
   margin: 10px;
 }
+
 h2 {
   font-size: 1.7em;
 }
+
+/*Restaurant list items*/
 .name-list {
-      box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 .name-list:hover {
     color: #ff844f;
@@ -45,4 +54,17 @@ h2 {
 .name-list:active {
   color: red;
   font-weight: bold;
+}
+/*End Name*/
+
+/* Delete any kind of Formatting for the buttons inside the list to have them clear*/
+.li-button {
+  width: 100%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+  font-size:13px;
 }

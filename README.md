@@ -1,44 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project - FEND Neighborhood Map
+This project is from Antimo William Esposito.
+Hi there friends at Udacity ! :)
+A special thanks to Doug Brown and Jason Michael White for all the suggestion and everythign they have done during this course ! :)
 
-## Available Scripts
+## Table of Contents
+* [Instructions](#Instructions)
+* [Features](#Features)
+* [File-Added](#File-Added)
+* [Contributing](#Contributing)
+* [Built_With](#Built_With)
+* [Acknowledgments](#Acknowledgments)
+* [Special_Mention](#Special_Mention)
 
-In the project directory, you can run:
 
-### `npm start`
+# Instructions
+To getting started please follow these steps:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Clone or download this project
+* Install all project dependencies with `npm install`
+* Launch the app `npm start`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Once ready a new browser window should automatically open otherwise you can visit: http://localhost:3000/
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# File-Added
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* My personal API key is still into the files :)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Contributing
+Future version for improvement and continue learning will be developed :)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Built_With
+**LOVE++**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Love is an important component of coding :)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Languages:**
+* JS
+* CSS
+* HTML
+**Frameworks/Libraries/APIs**
+* React
+* Google Fonts
+* Font Awesome
 
-## Learn More
+# Acknowledgments
+Thanks to all the resources linked into Udacity Course
+* https://www.youtube.com/watch?reload=9&v=NVAVLCJwAAo&feature=youtu.be
+* https://www.youtube.com/watch?v=MUVMTVd9Gzg&feature=youtu.be
+* https://www.youtube.com/watch?v=5J6fs_BlVC0&feature=youtu.be
+* https://www.youtube.com/playlist?list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP
+* https://www.youtube.com/watch?v=LvQe7xrUh7I&index=6&list=PLKC17wty6rS1XVZbRlWjYU0WVsIoJyO3s&t=0s
+* https://www.youtube.com/channel/UCcWSbBe_s-T_gZRnqFbtyIA
+* https://www.youtube.com/watch?v=9t1xxypdkrE&feature=youtu.be
+* https://www.youtube.com/watch?v=Uw5Ij56RhME
+* and more O_O
+* Doug Brown Project Coach and drunkenkismet Project Coach
+* Non-Sleep
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Special_Mention
+Thanks to:
+- Udacity & Google
+- The Community and Brenda & Kelsey
+- The Project Coaches & The students
+- The Reviewers for all the post suggestions
+- Laurette Sarah and Christa
+- My wife and my Family
+Thanks to all of you guys !

@@ -21,11 +21,11 @@ class SideBar extends Component {
           textAlign: "center"
         }}>
         <img src={logo} className="App-logo" alt="Cool logo in motion" />
-        <h2>Filter Restaurants</h2>
+        <h3>Filtering</h3>
         <input
-          type={"search"}
-          id={"search"}
-          placeholder={"Find Your"}
+          type="search"
+          id="search"
+          placeholder="Find Your"
           className="filterPlaceholderText"
           name="filter"
           onChange={e => this.updateQuery(e.target.value)}
@@ -36,13 +36,15 @@ class SideBar extends Component {
             this.props.filteredRestaurants.map((restaurant, i) => {
               return (
                 <li
-                  role="button"
                   key={i}
-                  tabIndex="0"
                   className="name-list"
                   style={{ padding: 5, margin: 10 }}
-                  onClick={() => this.props.handleClick(restaurant)}>
-                  {restaurant.name}
+                  >
+                  <button
+                    tabIndex="0"
+                    className="li-button"
+                    onClick={() => this.props.handleClick(restaurant)}>{restaurant.name}
+                  </button>
                 </li>
               );
             })}
