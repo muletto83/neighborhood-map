@@ -14,6 +14,7 @@ const SideBar = ({ filteredRestaurants, handleClick }) => {
       }}>
       <img src={logo} className="App-logo" alt="Cool logo in motion" />
       <h2>Filter Restaurants</h2>
+      <input type={"search"} id={"search"} placeholder={"Find Your"} />
       <ul style={{ listStyleType: "none", padding: 0 }}>
         {filteredRestaurants.map((restaurant, i) => {
           return (
