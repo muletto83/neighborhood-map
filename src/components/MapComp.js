@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+//Rendering of the Map Component
 export default class MapComp extends Component {
   render() {
     return (
