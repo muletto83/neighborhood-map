@@ -1,12 +1,11 @@
 # Project - FEND Neighborhood Map
 This project is from Antimo William Esposito.
 Hi there friends at Udacity ! :)
-A special thanks to Doug Brown and Jason Michael White for all the suggestion and everything they have done during this course ! :)
+A special thanks to Doug Brown and Jason Michael White for all the help and suggestions, and everything they have done during this course ! :)
 
 ## Table of Contents
 * [Instructions](#Instructions)
 * [Features](#Features)
-* [File-Added](#File-Added)
 * [Contributing](#Contributing)
 * [Built_With](#Built_With)
 * [Acknowledgments](#Acknowledgments)
@@ -14,28 +13,22 @@ A special thanks to Doug Brown and Jason Michael White for all the suggestion an
 
 
 # Instructions
-To getting started please follow these steps:
+To get started please follow these steps:
 
 * Clone or download this project
 * Install all project dependencies with `npm install`
 * Launch the app `npm start`
 
-Once ready a new browser window should automatically open otherwise you can visit: http://localhost:3000/
+Once ready a new browser window should automatically open, otherwise you can visit: http://localhost:3000/
 
-**Note that the default service worker is used in this app (bootstrapped with create-react-app) and so only works in production build.**
+**Note that the default service worker is used in this app (bootstrapped with create-react-app) and so it only works in production build.**
 
 ## Features
-A map of the best place to eat around my house
+A map of the best places to eat around my house:
 - Keyboard Tab improved to work for a11y
 - Filter input to filter the restaurant from that list and automatically filter the map markers
 - Responsive for major devices
-
-
-# File-Added
-
-
-* My personal API key is still into the files :)
-
+- Map has marker and Infowindows to get info for the specific restaurant
 
 # Contributing
 Future version for improvement and continue learning will be developed :)
@@ -50,7 +43,7 @@ Love is an important component of coding :)
 * CSS
 * HTML
 **Frameworks/Libraries/APIs**
-* My Home made JSON API to retrieve data from
+* My Homemade :) JSON API to retrieve data from at http://myjson.com/svl16
 * React
 * Google Fonts
 * Font Awesome
@@ -77,4 +70,5 @@ Thanks to:
 - The Reviewers for all the post suggestions
 - Laurette Sarah and Christa
 - My wife and my Family
+
 Thanks to all of you guys !

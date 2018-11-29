@@ -20,7 +20,8 @@ class App extends Component {
     let gMapPromise = load_google_maps();
     let restaurantsPromise = loadRestaurants();
 
-    Promise.all([gMapPromise, restaurantsPromise]).then(values => {
+    Promise.all([gMapPromise, restaurantsPromise])
+    .then(values => {
       //Checking the the value content to evaluate our next move
       // console.log(values);
       let google = values[0];
@@ -82,6 +83,9 @@ class App extends Component {
         infoWindow: infoWindow,
         filteredRestaurants: restaurants
       });
+    })
+    .catch(error => {
+      alert("Something went wrong, please run away from the computer now")
     });
   };
 
@@ -107,7 +111,7 @@ class App extends Component {
           </p>
         </address>
         <p>From:
-          <a href="http://myjson.com/svl16" target="_blank">Restaurants-I-Love</a>
+          <a href="http://myjson.com/svl16" target="_blank">Restaurants-We-Love</a>
         </p>
       </div>`;
   };
