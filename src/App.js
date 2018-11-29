@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import MapComp from "./components/MapComp";
 import Sidebar from "./components/SideBar";
 
-
 class App extends Component {
   state = {
     map: null,
@@ -95,45 +94,57 @@ class App extends Component {
   };
 
   makeContent = restaurant => {
-    return (
-      `<div className="infowindow-content">
+    return `<div className="infowindow-content">
         <h3>${restaurant.name}</h3>
         <address>
           <p>${restaurant.address}</p>
           <p>Website:
-            <a href="${restaurant.website}" target="_blank">${restaurant.website}</a>
+            <a href="${restaurant.website}" target="_blank">${
+      restaurant.website
+    }</a>
           </p>
         </address>
         <p>From:
           <a href="http://myjson.com/svl16" target="_blank">Restaurants-I-Love</a>
         </p>
-      </div>`);
+      </div>`;
   };
 
-  updateQuery = (query) => {
-    console.log(query)
-    console.log(this.state.restaurants)
-    let matchedRestaurants = []
-    if (!query) {
+  filterRestaurants = query => {
+    let matchedRestaurants = [];
+    if (query === "") {
       this.setState({
         filteredRestaurants: this.state.restaurants
-      })
+      });
+      this.state.markers.forEach(marker => {
+        marker.setVisible(true);
+      });
+      return;
     }
     this.state.restaurants.forEach(restaurant => {
-      if (restaurant.restaurant.name.toLowerCase().includes(query.toLowerCase())) {
-        matchedRestaurants.push(restaurant)
+      console.log(restaurant);
+      if (restaurant.name.toLowerCase().includes(query.toLowerCase())) {
+        matchedRestaurants.push(restaurant);
       }
     });
+    this.setState(
+      {
+        filteredRestaurants: matchedRestaurants
+      },
+      () => this.handleMarkerVisibility(matchedRestaurants)
+    );
+  };
+
+  handleMarkerVisibility = restaurants => {
     this.state.markers.forEach(marker => {
       marker.setVisible(false);
-      matchedRestaurants.forEach(restaurant => {
-        if (marker.title === restaurant.restaurant.name) {
+    });
+    restaurants.forEach(restaurant => {
+      this.state.markers.forEach(marker => {
+        if (marker.name === restaurant.name) {
           marker.setVisible(true);
         }
       });
-    });
-    this.setState({
-      filteredRestaurants: matchedRestaurants
     });
   };
   handleClick = restaurant => {
@@ -155,8 +166,8 @@ class App extends Component {
         <Sidebar
           {...this.state}
           restaurants={this.state.restaurants}
-          filtered={this.state.filteredRestaurants}
-          filterRestaurants={this.updateQuery}
+          filteredRestaurants={this.state.filteredRestaurants}
+          filterRestaurants={this.filterRestaurants}
           handleClick={this.handleClick}
         />
         <MapComp />
