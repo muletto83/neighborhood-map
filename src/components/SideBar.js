@@ -23,18 +23,22 @@ class SideBar extends Component {
           <img src={logo} className="App-logo" alt="Cool logo in motion" />
           <h2>Filter Restaurants</h2>
           <input
-            type={"search"}
-            id={"search"}
-            placeholder={"Find Your"}
-            className="filterPlaceholderText"
-            name="filter"
-            onChange={e => this.updateQuery(e.target.value)}
-            value={this.state.query}
-            />
+          type="text"
+          placeholder={"Find Your"}
+          className="filterPlaceholderText"
+          name="filter"
+          onChange={e => this.updateQuery(e.target.value)}
+          value={this.state.query}
+          />
           <ul style={{ listStyleType: "none", padding: 0 }}>
             {this.props.filtered && this.props.filtered.map((restaurant, i) => {
               return (
-                <li key={i} className="name-list" style={{ padding: 5, margin:10 }} onClick={() => this.props.handleClick(restaurant)}>
+                <li
+                key={i}
+                tabIndex="1"
+                className="name-list"
+                style={{ padding: 5, margin:10 }}
+                onClick={() => this.props.handleClick(restaurant)}>
                   {restaurant.name}
                 </li>
               );

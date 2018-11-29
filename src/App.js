@@ -156,7 +156,7 @@ class App extends Component {
           {...this.state}
           restaurants={this.state.restaurants}
           filtered={this.state.filteredRestaurants}
-          filteredRestaurants={this.updateQuery}
+          filterRestaurants={this.updateQuery}
           handleClick={this.handleClick}
         />
         <MapComp />
