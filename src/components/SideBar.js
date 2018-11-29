@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "../logo.svg";
 import "../App.css";
 
+// Completed Sidebar Managment
 class SideBar extends Component {
   state = {
     query: ""
@@ -22,9 +23,11 @@ class SideBar extends Component {
         }}>
         <img src={logo} className="App-logo" alt="Cool logo in motion" />
         <h3>Filtering</h3>
+        {/*input for filtering restaurant from the list*/}
         <input
           type="search"
           id="search"
+          aria-label="filter"
           placeholder="Find Your"
           className="filterPlaceholderText"
           name="filter"
@@ -41,7 +44,6 @@ class SideBar extends Component {
                   style={{ padding: 5, margin: 10 }}
                   >
                   <button
-                    tabIndex="0"
                     className="li-button"
                     onClick={() => this.props.handleClick(restaurant)}>{restaurant.name}
                   </button>

@@ -85,6 +85,7 @@ class App extends Component {
     });
   };
 
+  /*Marketr animation*/
   animateMarker = marker => {
     marker.setAnimation(window.google.maps.Animation.BOUNCE);
     /* Lets avoid infinite jumping... it will be Horrible for users
@@ -111,6 +112,7 @@ class App extends Component {
       </div>`;
   };
 
+  /*filtering the restaurant list*/
   filterRestaurants = query => {
     let matchedRestaurants = [];
     let infoWindow = this.state.infoWindow;
@@ -139,6 +141,7 @@ class App extends Component {
     );
   };
 
+  /*Manage the marker Visibility */
   handleMarkerVisibility = restaurants => {
     this.state.markers.forEach(marker => {
       marker.setVisible(false);
@@ -151,6 +154,8 @@ class App extends Component {
       });
     });
   };
+
+  /*handling the click */
   handleClick = restaurant => {
     const { markers, map, infoWindow } = this.state;
     markers.map(marker => {

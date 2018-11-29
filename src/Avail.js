@@ -24,5 +24,5 @@ export function load_google_maps() {
 export function loadRestaurants() {
   return fetch("https://api.myjson.com/bins/svl16")
     .then(response => response.json())
-    .catch(error => alert("The API is not working... Sorry for the trouble."));
+    .catch(error => alert("The API is not working... It ran away... Sorry for the trouble."));
 }
