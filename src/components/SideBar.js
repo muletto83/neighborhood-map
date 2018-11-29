@@ -36,8 +36,9 @@ class SideBar extends Component {
             this.props.filteredRestaurants.map((restaurant, i) => {
               return (
                 <li
+                  role="button"
                   key={i}
-                  tabIndex="1"
+                  tabIndex="0"
                   className="name-list"
                   style={{ padding: 5, margin: 10 }}
                   onClick={() => this.props.handleClick(restaurant)}>
